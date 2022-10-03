@@ -38,7 +38,6 @@ def what_is_year_now() -> int:
 
 if __name__ == '__main__':
     year = what_is_year_now()
-    exp_year = 2019
-
+    exp_year = 2022
     print(year)
     assert year == exp_year
