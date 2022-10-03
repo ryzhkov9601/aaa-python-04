@@ -1,5 +1,6 @@
-from what_is_year_now import what_is_year_now
 import unittest
+
+from what_is_year_now import what_is_year_now
 
 
 class TestCurrentYear(unittest.TestCase):
