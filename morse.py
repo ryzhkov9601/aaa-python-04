@@ -26,7 +26,15 @@ MORSE_TO_LETTER = {
 
 def encode(message: str) -> str:
     """
-    Кодирует строку в соответсвие с таблицей азбуки Морзе
+    Кодирует строку в соответствии с таблицей азбуки Морзе
+    >>> encode('SOS') # doctest: +NORMALIZE_WHITESPACE
+    '...  ---  ...'
+    >>> encode('1')
+    '.----'
+    >>> encode(1) # doctest: +ELLIPSIS, +IGNORE_EXCEPTION_DETAIL
+    Traceback (most recent call last):
+        ...
+    TypeError
     """
     encoded_signs = [
         LETTER_TO_MORSE[letter] for letter in message
@@ -47,7 +55,7 @@ def decode(morse_message: str) -> str:
 
 
 if __name__ == '__main__':
-    morse_msg = '-- .- .. -....- .--. -.-- - .... --- -. -....- ..--- ----- .---- ----.'
+    morse_msg = '-- .- .. -....- .--. -.-- - .... --- -.'
     decoded_msg = decode(morse_msg)
     print(decoded_msg)
     assert morse_msg == encode(decoded_msg)
