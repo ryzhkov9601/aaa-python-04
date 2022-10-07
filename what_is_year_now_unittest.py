@@ -2,11 +2,17 @@ import unittest
 from unittest.mock import MagicMock, patch
 
 from what_is_year_now import what_is_year_now
+from urllib.error import HTTPError
 
 
 class TestCurrentYear(unittest.TestCase):
     def test_online_year(self):
-        self.assertEqual(what_is_year_now(), 2022)
+        try:
+            year = what_is_year_now()
+        except HTTPError as err:
+            self.assertEqual(err.code, 503, msg='Unavailable')
+        else:
+            self.assertEqual(year, 2022)
 
     @patch('what_is_year_now.urllib.request.urlopen')
     def test_format_with_dashes(self, mock_urlopen):
