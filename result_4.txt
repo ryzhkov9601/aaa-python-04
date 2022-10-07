@@ -1,0 +1,13 @@
+============================= test session starts ==============================
+platform linux -- Python 3.9.12, pytest-7.1.3, pluggy-1.0.0 -- /home/ryzhkov/avito/aaa-python-04/venv/bin/python3
+cachedir: .pytest_cache
+rootdir: /home/ryzhkov/avito/aaa-python-04
+collecting ... collected 5 items
+
+one_hot_encoder_test.py::test_one_category PASSED                        [ 20%]
+one_hot_encoder_test.py::test_many_categories PASSED                     [ 40%]
+one_hot_encoder_test.py::test_one_arg PASSED                             [ 60%]
+one_hot_encoder_test.py::test_args PASSED                                [ 80%]
+one_hot_encoder_test.py::test_wrong_input PASSED                         [100%]
+
+============================== 5 passed in 0.01s ===============================
