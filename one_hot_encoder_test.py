@@ -3,12 +3,6 @@ import pytest
 from one_hot_encoder import fit_transform
 
 
-test_cases = [
-    ([0, 0], [(0, [1]), (0, [1])]),
-    (['A+', 'A', 'B', 'C'], )
-]
-
-
 def test_one_category():
     categories = [0, 0]
     expected = [(0, [1]), (0, [1])]
@@ -25,6 +19,11 @@ def test_many_categories():
         ('A', [0, 0, 1]),
     ]
     assert fit_transform(categories) == expected, categories
+
+
+def test_one_arg():
+    expected = [('123', [1])]
+    assert fit_transform('123') == expected, "'123'"
 
 
 def test_args():
