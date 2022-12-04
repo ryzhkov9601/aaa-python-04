@@ -1,10 +1,10 @@
-test_args (one_hot_encoder_unittest.TestFitTransform) ... ok
-test_first_item_in (one_hot_encoder_unittest.TestFitTransform) ... ok
-test_one_category (one_hot_encoder_unittest.TestFitTransform) ... ok
-test_wrong_input (one_hot_encoder_unittest.TestFitTransform) ... ok
-test_zero_not_in (one_hot_encoder_unittest.TestFitTransform) ... ok
+test_args (test_one_hot_encoder.TestFitTransform) ... ok
+test_first_item_in (test_one_hot_encoder.TestFitTransform) ... ok
+test_one_category (test_one_hot_encoder.TestFitTransform) ... ok
+test_wrong_input (test_one_hot_encoder.TestFitTransform) ... ok
+test_zero_not_in (test_one_hot_encoder.TestFitTransform) ... ok
 
 ----------------------------------------------------------------------
-Ran 5 tests in 0.001s
+Ran 5 tests in 0.000s
 
 OK

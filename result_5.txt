@@ -1,9 +1,9 @@
-test_format_with_dashes (what_is_year_now_unittest.TestCurrentYear) ... ok
-test_format_with_dots (what_is_year_now_unittest.TestCurrentYear) ... ok
-test_invalid_format (what_is_year_now_unittest.TestCurrentYear) ... ok
-test_online_year (what_is_year_now_unittest.TestCurrentYear) ... ok
+test_format_with_dashes (test_what_is_year_now.TestCurrentYear) ... ok
+test_format_with_dots (test_what_is_year_now.TestCurrentYear) ... ok
+test_invalid_format (test_what_is_year_now.TestCurrentYear) ... ok
+test_online_year (test_what_is_year_now.TestCurrentYear) ... ok
 
 ----------------------------------------------------------------------
-Ran 4 tests in 16.153s
+Ran 4 tests in 1.471s
 
 OK
