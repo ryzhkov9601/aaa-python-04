@@ -52,9 +52,9 @@ def fit_transform(*args: str) -> List[Tuple[str, List[int]]]:
 ```
 
 
-Запуск: `python -m unittest -v one_hot_encoder_unittest.py`
+Запуск: `python -m unittest -v test_one_hot_encoder.py`
 
-Вывод: `python -m unittest -v one_hot_encoder_unittest.py 2> result_3.txt`
+Вывод: `python -m unittest -v test_one_hot_encoder.py 2> result_3.txt`
 
 Результат: `result_3.txt`
 
@@ -91,10 +91,12 @@ def what_is_year_now() -> int:
     """
 ```
 
-Запуск: `python -m unittest -v what_is_year_now_unittest.py`
+Запуск: `python -m unittest -v test_what_is_year_now.py`
 
-Вывод: `python -m unittest -v what_is_year_now_unittest.py 2> result_5.txt`
+Вывод: `python -m unittest -v test_what_is_year_now.py 2> result_5.txt`
 
 Результат: `result_5.txt`
 
 Директория отчета о покрытии кода тестами: `htmlcov/`
+
+Для создания отчета о покрытии запустить команду: `coverage html`
