@@ -99,4 +99,9 @@ def what_is_year_now() -> int:
 
 Директория отчета о покрытии кода тестами: `htmlcov/`
 
-Для создания отчета о покрытии запустить команду: `coverage html`
+Для создания отчета о покрытии запустить команды: 
+
+```
+coverage run -m unittest test_what_is_year_now.py
+coverage html
+```
