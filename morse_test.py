@@ -15,4 +15,4 @@ test_cases = [
     test_cases, ids=['SOS', '1234', 'WHO?']
 )
 def test_decode(morse_message, decoded_message):
-    assert decode(morse_message) == decoded_message, decoded_message
+    assert decode(morse_message) == decoded_message
