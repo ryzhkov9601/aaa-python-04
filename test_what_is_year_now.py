@@ -28,19 +28,19 @@ class TestCurrentYear(unittest.TestCase):
 
     @patch('what_is_year_now.urllib.request.urlopen')
     def test_format_with_dashes(self, mock_urlopen):
-        response = """{"currentDateTime": "2022-10-01"}"""
+        response = '{"currentDateTime": "2022-10-01"}'
         mock_urlopen.return_value = self.cm_urlopen(response)
         self.assertEqual(what_is_year_now(), 2022)
 
     @patch('what_is_year_now.urllib.request.urlopen')
     def test_format_with_dots(self, mock_urlopen):
-        response = """{"currentDateTime": "01.10.2022"}"""
+        response = '{"currentDateTime": "01.10.2022"}'
         mock_urlopen.return_value = self.cm_urlopen(response)
         self.assertEqual(what_is_year_now(), 2022)
 
     @patch('what_is_year_now.urllib.request.urlopen')
     def test_invalid_format(self, mock_urlopen):
-        response = """{"currentDateTime": "01/10/2022"}"""
+        response = '{"currentDateTime": "01/10/2022"}'
         mock_urlopen.return_value = self.cm_urlopen(response)
         with self.assertRaises(ValueError):
             what_is_year_now()
